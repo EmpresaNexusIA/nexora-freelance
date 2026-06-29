@@ -1,4 +1,5 @@
-import Navbar        from './components/Navbar'
+import Navbar          from './components/Navbar'
+import WhatsAppFloat   from './components/WhatsAppFloat'
 import Hero          from './components/Hero'
 import ParaQuienEs   from './components/ParaQuienEs'
 import QueHacemos    from './components/QueHacemos'
@@ -22,6 +23,7 @@ export default function App() {
         <CTAForm />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   )
 }
