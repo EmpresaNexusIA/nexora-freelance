@@ -64,7 +64,7 @@ export default function ParaQuienEs() {
             <span className="text-gradient-blue">más clientes</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            Si tenés un negocio en Rosario y todavía no estás en internet, esto es para vos.
+            Si tenés un negocio y todavía no estás en internet, esto es para vos.
           </p>
         </motion.div>
 
