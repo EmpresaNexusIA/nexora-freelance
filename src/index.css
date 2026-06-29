@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#0f172a] text-slate-100 font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #0f172a; }
+  ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #475569; }
+}
+
+@layer utilities {
+  .text-gradient-blue {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-500;
+  }
+
+  .text-gradient-orange {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-orange-500;
+  }
+
+  /* Dot grid background */
+  .bg-dots {
+    background-image: radial-gradient(circle, rgba(148,163,184,0.07) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* Section glow blobs */
+  .blob-blue {
+    @apply absolute rounded-full blur-3xl opacity-20 pointer-events-none;
+    background: #3b82f6;
+  }
+
+  .blob-orange {
+    @apply absolute rounded-full blur-3xl opacity-15 pointer-events-none;
+    background: #f97316;
+  }
+}
