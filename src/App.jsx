@@ -1,29 +1,14 @@
-import Navbar          from './components/Navbar'
-import WhatsAppFloat   from './components/WhatsAppFloat'
-import Hero          from './components/Hero'
-import ParaQuienEs   from './components/ParaQuienEs'
-import QueHacemos    from './components/QueHacemos'
-import ComoTrabajamos from './components/ComoTrabajamos'
-import PorQueNexora  from './components/PorQueNexora'
-import FAQ           from './components/FAQ'
-import CTAForm       from './components/CTAForm'
-import Footer        from './components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import LandingPage from './pages/LandingPage'
+import DemoPage    from './pages/DemoPage'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#0f172a] overflow-x-hidden">
-      <Navbar />
-      <main>
-        <Hero />
-        <ParaQuienEs />
-        <QueHacemos />
-        <ComoTrabajamos />
-        <PorQueNexora />
-        <FAQ />
-        <CTAForm />
-      </main>
-      <Footer />
-      <WhatsAppFloat />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/"            element={<LandingPage />} />
+        <Route path="/demo/:slug"  element={<DemoPage />}    />
+      </Routes>
+    </BrowserRouter>
   )
 }
