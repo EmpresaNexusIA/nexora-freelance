@@ -39,9 +39,9 @@ export default {
   galleryTitle: 'Nuestros productos',
   gallery: [
     { image: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600&auto=format&fit=crop&q=80', alt: 'Carne vacuna fresca', title: 'Cortes de vacuno' },
-    { image: 'https://images.unsplash.com/photo-1544025162-d76538a2a5f5?w=600&auto=format&fit=crop&q=80', alt: 'Variedad de carnes', title: 'Variedad diaria' },
+    { image: 'https://images.unsplash.com/photo-1558030006-450675393462?w=600&auto=format&fit=crop&q=80', alt: 'Bife de chorizo fresco', title: 'Cortes seleccionados' },
     { image: 'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&auto=format&fit=crop&q=80', alt: 'Embutidos y fiambres', title: 'Embutidos artesanales' },
-    { image: 'https://images.unsplash.com/photo-1551290464-ad17dc28e55c?w=600&auto=format&fit=crop&q=80', alt: 'Carnicero trabajando', title: 'Atención personalizada' },
+    { image: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=600&auto=format&fit=crop&q=80', alt: 'Vidriera de carnicería', title: 'Vidriera completa' },
   ],
 
   testimonials: [
