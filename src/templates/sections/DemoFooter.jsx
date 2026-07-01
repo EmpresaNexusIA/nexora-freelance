@@ -1,5 +1,5 @@
 export default function DemoFooter({ data }) {
-  const { theme, businessName, footerTagline } = data
+  const { theme, businessName, footerTagline, instagram } = data
 
   return (
     <footer
@@ -15,6 +15,17 @@ export default function DemoFooter({ data }) {
             <p className="text-sm" style={{ color: 'rgba(255,255,255,0.55)' }}>
               {footerTagline}
             </p>
+          )}
+          {instagram && (
+            <a
+              href={instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm transition-opacity hover:opacity-80"
+              style={{ color: theme.secondaryColor }}
+            >
+              Instagram
+            </a>
           )}
         </div>
 

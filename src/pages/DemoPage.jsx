@@ -6,8 +6,9 @@ import taller       from '../data/taller'
 import gastronomia  from '../data/gastronomia'
 import veterinaria  from '../data/veterinaria'
 import oficios      from '../data/oficios'
+import distribuidora from '../data/distribuidora'
 
-const DATA_MAP = { peluqueria, carniceria, taller, gastronomia, veterinaria, oficios }
+const DATA_MAP = { peluqueria, carniceria, taller, gastronomia, veterinaria, oficios, distribuidora }
 
 export default function DemoPage() {
   const { slug } = useParams()

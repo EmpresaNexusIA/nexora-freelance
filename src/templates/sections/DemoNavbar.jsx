@@ -4,7 +4,7 @@ import { buildWAUrl } from '../../config/demoDefaults.js'
 export default function DemoNavbar({ data }) {
   const [scrolled, setScrolled]   = useState(false)
   const [menuOpen, setMenuOpen]   = useState(false)
-  const { theme, features, businessName, whatsappNumber, whatsappMessage } = data
+  const { theme, features, businessName, logoImage, whatsappNumber, whatsappMessage } = data
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 10)
@@ -35,9 +35,12 @@ export default function DemoNavbar({ data }) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <a
           href="#inicio"
-          className="font-bold text-xl tracking-tight"
+          className="flex items-center gap-2.5 font-bold text-xl tracking-tight"
           style={{ fontFamily: theme.fontTitle, color: theme.primaryColor }}
         >
+          {logoImage && (
+            <img src={logoImage} alt={businessName} className="h-9 w-auto rounded" />
+          )}
           {businessName}
         </a>
 
