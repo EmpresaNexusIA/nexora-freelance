@@ -8,14 +8,15 @@ const ease = [0.22, 1, 0.36, 1]
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Fondo con imagen y movimiento sutil (Ken Burns lento, solo transform) */}
+      {/* Fondo con imagen y movimiento sutil (Ken Burns lento, solo transform, respeta prefers-reduced-motion) */}
       <div
-        className="absolute inset-0 animate-hero-pan"
+        className="absolute inset-0 animate-hero-pan motion-reduce:animate-none"
         style={{
           backgroundImage: 'url(/hero-bg.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
+          willChange: 'transform',
         }}
       />
 
