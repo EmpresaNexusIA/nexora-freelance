@@ -41,9 +41,9 @@ export default {
     { image: '/demos/distribuidora/fachada-precios.jpg',     alt: 'Fachada de Fernández Distribuidora con pizarras de precios', title: 'Nuestra fachada' },
     { image: '/demos/distribuidora/gondola-golosinas.jpg',   alt: 'Góndola de golosinas, fiambres y bebidas', title: 'Surtido en góndola' },
     { image: '/demos/distribuidora/bebidas-variedad.jpg',    alt: 'Variedad de bebidas', title: 'Bebidas' },
-    { image: '/demos/distribuidora/almacen-productos.jpg',   alt: 'Productos de almacén', title: 'Almacén' },
     { image: '/demos/distribuidora/limpieza-productos.jpg',  alt: 'Productos de limpieza', title: 'Limpieza' },
-    { image: '/demos/distribuidora/deposito-interior.jpg',   alt: 'Interior del depósito con estanterías', title: 'Nuestro depósito' },
+    { image: '/demos/distribuidora/aceite-almacen.jpg',      alt: 'Aceite de girasol de almacén', title: 'Almacén' },
+    { image: '/demos/distribuidora/higiene-perfumeria.jpg',  alt: 'Crema dental y perfumería', title: 'Perfumería' },
   ],
 
   testimonials: [
