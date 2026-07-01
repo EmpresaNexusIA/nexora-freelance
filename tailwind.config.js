@@ -28,8 +28,15 @@ export default {
       backgroundSize: {
         'dot-24': '24px 24px',
       },
+      keyframes: {
+        'hero-pan': {
+          '0%, 100%': { transform: 'scale(1.06) translate3d(0, 0, 0)' },
+          '50%': { transform: 'scale(1.1) translate3d(-1%, -1%, 0)' },
+        },
+      },
       animation: {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4,0,0.6,1) infinite',
+        'hero-pan': 'hero-pan 24s ease-in-out infinite',
       },
     },
   },

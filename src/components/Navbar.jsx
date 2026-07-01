@@ -23,11 +23,12 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex flex-col leading-none group">
-          <span className="font-heading font-bold text-xl text-white tracking-tight">
+          <span className="font-heading font-bold text-2xl text-white tracking-tight">
             Nexora<span className="text-orange-500 group-hover:text-orange-400 transition-colors">.</span>
           </span>
-          <span className="text-[9px] text-slate-500 uppercase tracking-[0.2em] font-body">
-            Desarrollos
+          <span className="text-[10px] text-slate-500 font-body mt-0.5 whitespace-nowrap">
+            Donde la innovación se vuelve{' '}
+            <span style={{ color: '#f97316' }}>simple</span>
           </span>
         </a>
 
