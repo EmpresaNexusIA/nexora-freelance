@@ -1,4 +1,4 @@
-import { ROSARIO_MAPS_EMBED, DEFAULT_FEATURES } from '../config/demoDefaults.js'
+import { DEFAULT_FEATURES } from '../config/demoDefaults.js'
 
 export default {
   slug: 'distribuidora',
@@ -60,7 +60,8 @@ export default {
 
   ubicacion: {
     texto:     'Cabal 971 bis, Rosario',
-    mapsEmbed: ROSARIO_MAPS_EMBED,
+    mapsEmbed: 'https://www.google.com/maps?q=Cabal+971+bis+Rosario+Santa+Fe&output=embed',
+    mapsLink:  'https://www.google.com/maps/search/?api=1&query=Cabal+971+bis+Rosario+Santa+Fe',
   },
 
   ctaHighlight: 'Hacemos envíos a domicilio en Rosario',

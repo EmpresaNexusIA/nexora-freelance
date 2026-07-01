@@ -21,7 +21,18 @@ export default function DemoHorarios({ data }) {
           {ubicacion.texto && (
             <p className="text-lg flex items-center justify-center gap-1.5" style={{ color: theme.textMuted }}>
               <MapPin size={16} strokeWidth={1.5} style={{ color: theme.secondaryColor, flexShrink: 0 }} />
-              {ubicacion.texto}
+              {ubicacion.mapsLink ? (
+                <a
+                  href={ubicacion.mapsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  {ubicacion.texto}
+                </a>
+              ) : (
+                ubicacion.texto
+              )}
               {ubicacion.barrio && <span className="hidden sm:inline"> · {ubicacion.barrio}</span>}
             </p>
           )}

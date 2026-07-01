@@ -8,7 +8,7 @@ const WA_SVG = (
 )
 
 export default function DemoCTA({ data }) {
-  const { theme, ctaText, ctaSubtext, ctaHighlight, whatsappNumber, whatsappMessage } = data
+  const { theme, ctaText, ctaSubtext, ctaHighlight, whatsappNumber, whatsappMessage, logoImage } = data
   const waUrl = buildWAUrl(whatsappNumber, whatsappMessage)
 
   return (
@@ -27,10 +27,16 @@ export default function DemoCTA({ data }) {
           </p>
         )}
         <h2
-          className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 leading-tight"
+          className="flex items-center justify-center gap-4 text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 leading-tight"
           style={{ fontFamily: theme.fontTitle }}
         >
+          {logoImage && (
+            <img src={logoImage} alt="" className="hidden sm:block h-10 md:h-12 w-auto rounded" />
+          )}
           ¿Listo para hablar?
+          {logoImage && (
+            <img src={logoImage} alt="" className="hidden sm:block h-10 md:h-12 w-auto rounded" />
+          )}
         </h2>
         <a
           href={waUrl}
